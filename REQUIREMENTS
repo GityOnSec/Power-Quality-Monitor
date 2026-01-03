@@ -1,0 +1,18 @@
+🧠 Hardware Requirements
+
+Component	Purpose
+ESP32 Dev Board	Controller + Wi-Fi
+ZMPT101B	(AC Voltage Sensor)
+ACS712 / SCT-013	(Current Sensor)
+OLED 0.96″ (Optional)	(Local display)
+230V AC Input via Stepdown Transformer	(Safe sensing)
+Resistors / PCB / Breadboard	(Connections)
+
+
+🔌 Wiring (Summary)
+
+ZMPT101B → ESP32 ADC GPIO 34
+ACS712 → ESP32 ADC GPIO 35
+OLED (optional) → I2C SDA/SCL
+Common GND
+ESP32 powered via USB
