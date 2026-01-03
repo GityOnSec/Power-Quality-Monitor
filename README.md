@@ -36,3 +36,13 @@ This project measures and logs power quality parameters including:
 5. View data live
 Built using ESP32 + ACS712 + ZMPT101B and a web dashboard.
 
+
+
+Upload using Git :
+cd power-quality-monitor
+git init
+git add .
+git commit -m "First commit"
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/power-quality-monitor.git
+git push -u origin main
