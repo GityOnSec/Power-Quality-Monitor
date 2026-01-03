@@ -1,0 +1,13 @@
+CREATE FOLDER 
+mkdir power-quality-monitor
+cd power-quality-monitor
+
+FOR INITIALIZING YOUR GIT IN TERMINAL
+git init
+git add .
+git commit -m "Initial commit - Power Quality Monitor"
+
+CONNECT GIT TO LOCAL
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/power-quality-monitor.git
+git push -u origin main
