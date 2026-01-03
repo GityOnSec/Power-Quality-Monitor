@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Power Quality Dashboard</h2>
+<div id="data"></div>
+
+<script>
+async function load(){
+  let r = await fetch("/data");
+  let j = await r.json();
+  document.getElementById("data").innerHTML =
+    `Voltage: ${j.Vrms}<br>
+     Current: ${j.Irms}<br>
+     Real Power: ${j.realPower}<br>
+     PF: ${j.pf}`;
+}
+setInterval(load,1000);
+</script>
+</body>
+</html>
